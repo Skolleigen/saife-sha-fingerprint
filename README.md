@@ -1,15 +1,20 @@
-**saife-sha-fingerprint v0.1.0**
+# saife-sha-fingerprint · v0.1.0
 
-Immutable, auditor-grade SHA-256 receipts in one command.
-Zero dependencies. Pure Python. Forensics-ready. Compliance-ready.
+Immutable, auditor-grade SHA-256 receipts in one command.  
+Zero dependencies. Pure Python. CI-ready. Forensics-ready.
 
-**Usage**
+---
+
+## 🐺 Quick Usage
+
+```bash
 pip install saife-sha-fingerprint
 saife-sha-fingerprint critical-report.pdf
+```
 
+Produces a deterministic, tamper-evident integrity receipt:
 
-**Produces a deterministic integrity receipt:**
-
+```json
 {
   "engine": "saife-sha-fingerprint",
   "version": "0.1.0",
@@ -18,59 +23,64 @@ saife-sha-fingerprint critical-report.pdf
   "method": "sha256-single-pass",
   "timestamp_utc": "2025-11-28T08:42:01Z"
 }
+```
 
+---
 
-**Designed for:**
+## 🟩 **Designed For**
 
--CI/CD integrity validation
+- CI/CD integrity validation  
+- Forensic artifact packaging  
+- Secure data pipelines  
+- Audit-grade evidence generation  
+- Chain-of-custody documentation  
 
--Forensic artifact packaging
+---
 
--Secure data pipelines
+## 🔮 **Features (Community Edition)**
 
--Audit-grade evidence generation
+- Zero-dependency SHA-256 hashing  
+- Deterministic receipts with ISO-8601 UTC timestamps  
+- Clean JSON output  
+- Works on any file  
+- Minimal, verifiable, drop-in compatible
 
--Chain-of-custody documentation
+---
 
-**Features (Community Edition)**
+## 🏢 **Enterprise Edition Enhancements**
 
-Zero-dependency SHA-256 hashing
+Saife Enterprise extends the engine with:
 
-Deterministic receipts with UTC timestamps
+- Forensic-grade Merkle trees  
+- Tamper-proof timestamp binding  
+- Directory manifests + cloud pipelines (S3, GCS, Snowflake)  
+- Automated mismatch detection & alerting  
+- Evidence lifecycle dashboards  
+- Regulatory retention & rotation workflows  
 
-Clean JSON output
+For inquiries: **security@saifecs.com**
 
-Works on any file type
+---
 
-**Enterprise Edition Enhancements**
+## 🧪 Running Tests
 
-Enterprise Edition extends the engine with:
-
-Forensic-grade Merkle trees
-
-Tamper-proof timestamp binding
-
-Directory manifests and cloud pipelines (S3, GCS, Snowflake)
-
-Automated mismatch detection and alerting
-
-Chain-of-custody dashboards
-
-Regulatory-oriented retention and rotation workflows
-
-For inquiries:
-security@saifecs.com
-
-Running Tests
+```bash
 pytest -v
+```
 
-Local Development Installation
+---
+
+## 🧩 Local Development
+
+```bash
 pip install -e .
+```
 
-Saife Labs — Research Division
+---
 
-Red-team hardened. Auditor approved. Enterprise ready.
+## 🐺 Saife Labs — Research Division
 
-Need compliance-grade integrity?
-https://saifecs.com
-security@saifecs.com
+Red-team hardened. Auditor approved. Enterprise ready.  
+Need compliance-grade integrity engines? → https://saifecs.com  
+Contact: **security@saifecs.com**
+
