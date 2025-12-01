@@ -1,4 +1,4 @@
-**saife-sha-fingerprint — v0.1.0**
+**saife-sha-fingerprint v0.1.0**
 
 Immutable, auditor-grade SHA-256 receipts in one command.
 Zero dependencies. Pure Python. Forensics-ready. Compliance-ready.
